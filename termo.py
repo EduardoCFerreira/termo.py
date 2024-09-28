@@ -30,6 +30,10 @@ while True:
                 palavra_formada += letra_secreta
             else:
                 palavra_formada += '*'
+        if letra in palavra_formada:
+            print(f'{letra} está na palavra')
+        if letra not in palavra_formada:
+            print(f'{letra} não está na palavra')
         print(palavra_formada)
 
         if palavra_formada == palavra:
